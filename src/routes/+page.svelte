@@ -1,2 +1,34 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<style>
+	section {
+		width: 12em;
+		padding: 1em;
+	}
+	div {
+		height: 1.5em;
+		width: 10em;
+		text-align: center;
+		border: 1px solid black;
+		margin: 0.2em;
+		padding: 0.3em;
+	}
+</style>
+<script>
+	import {dndzone} from 'svelte-dnd-action';
+	import {flip} from 'svelte/animate';
+	const flipDurationMs = 200;
+	function handleSort(e) {
+		items = e.detail.items;
+	}
+	let items = [
+		{id:1, title: 'I'},
+		{id:2, title: 'Am'},
+		{id:3, title: 'Yoda'}
+	];
+</script>
+<section use:dndzone={{items, flipDurationMs}} on:consider={handleSort} on:finalize={handleSort}>
+	{#each items as item(item.id)}
+		<div animate:flip={{duration:flipDurationMs}}>
+			{item.title}	
+		</div>
+	{/each}
+</section>
