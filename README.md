@@ -1,22 +1,32 @@
-# sv
+# Lasse´s Sortable Question Cards
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Required development tools
+1. Git (https://git-scm.com/downloads)
+2. Visual Studio Code (https://code.visualstudio.com/)
+3. NodeJS LTS (https://nodejs.org/en)
+4. NPM (comes with NodeJS)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Getting started
+When you've installed the required tools you'll have to copy this repository, open a terminal and copy-paste:
 
 ```bash
-# create a new project in the current directory
-npx sv create
+git clone git@github.com:walleboom/lasses-sortable-question-cards.git
+```
 
-# create a new project in my-app
-npx sv create my-app
+In the root directory of the project, run:
+
+```bash
+npm install
+```
+
+Open the project in Visual Studio Code:
+```bash
+code .
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start a development server:
 
 ```bash
 npm run dev
@@ -36,3 +46,6 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+
+# Good luck bro'! :)
