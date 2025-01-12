@@ -31,6 +31,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/container-queries": "^0.1.1",
-		"@tailwindcss/forms": "^0.5.9"
+		"@tailwindcss/forms": "^0.5.9",
+		"svelte-collapse": "^0.1.4"
 	}
 }
