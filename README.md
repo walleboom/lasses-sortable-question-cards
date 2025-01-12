@@ -1,4 +1,8 @@
 # Lasse´s Sortable Question Cards
+Quickstart for my brother to get started with Svelte/SvelteKit (https://svelte.dev/)
+
+## Demo
+https://walleboom.se/lasse/
 
 ## Required development tools
 1. Git (https://git-scm.com/downloads)
